@@ -33,8 +33,10 @@ class StateScript {
 //	add oneStates to States ArrayList 
 	@Test
 	public void AddStates (String oneState) {
-	 
-		 
+		
+		States.add("oneState");
+		
+		
 		
 	 
 		
@@ -43,14 +45,25 @@ class StateScript {
 //	Set third state oneStates 1 - 3 -5 -7 - 9 -11
 	@Test
 	public ArrayList<String> SetStates (String oneState) {
-	 
+	 for (int i = 0; i < States.size(); i=i+2) {
+		 
+		 
+		
+	}
+		
+		
 		 
 		return States;
-	}
+}
 
 //  Count of the myState if there is no any myState in the list return 0
 	public int countOfState(String myState) {
-		 
+      
+		for (int i = 0; i < States.size(); i++) {
+    	  if (States.get(i).equalsIgnoreCase(myState)) {
+    		
+		}
+	}
 		
 		return 0;
 		 
@@ -59,7 +72,12 @@ class StateScript {
 
 //	remove the myState from the States arrayList
 public ArrayList<String> RemoveTheState(String myState) {
-		 
+		 for (int i = 0; i < States.size(); i++) {
+			 if (States.get(i).equals(myState)) {
+				States.remove(myState);
+			}
+			
+		}
 		
 		return States;
 		 
@@ -68,6 +86,16 @@ public ArrayList<String> RemoveTheState(String myState) {
 //if the state duplicated remove duplicated states
 public ArrayList<String> RemoveDuplicatedStates(){
 	
+	for (int i = 0; i < States.size(); i++) {
+		for (int j = 0; j < States.size(); j++) {
+			if (States.get(i)) {
+				
+			}
+			
+		}
+		
+	}
+
 	
 	return States;
 }
